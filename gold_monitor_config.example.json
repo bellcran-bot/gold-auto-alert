@@ -1,0 +1,29 @@
+{
+  "report_timezone": "Asia/Seoul",
+  "news_query": "(gold OR \"gold price\" OR \"central bank gold\" OR \"gold reserves\")",
+  "news_rss_query": "gold price central bank gold reserves",
+  "news_max_records": 3,
+  "alert_threshold_pct": 1.5,
+  "central_bank_csv": "",
+  "central_bank_download": {
+    "enabled": false,
+    "url": "",
+    "target_path": "data/central_bank_gold.csv",
+    "min_interval_hours": 24,
+    "headers": {}
+  },
+  "central_bank_columns": {
+    "date": "date",
+    "country": "country",
+    "tonnes": "tonnes",
+    "change": ""
+  },
+  "krx": {
+    "enabled": false,
+    "api_url": "",
+    "service_key_env": "DATA_GO_KR_SERVICE_KEY",
+    "params": {
+      "resultType": "json"
+    }
+  }
+}
